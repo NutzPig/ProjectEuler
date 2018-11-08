@@ -1,0 +1,28 @@
+i = 0
+j = 0
+given_list = [1, 2]
+even_list = [2]
+
+def fibonnaci():
+    i = given_list[-1]
+    j = given_list[-2]
+    next_number = i + j
+    return next_number
+    
+    while i <= 4000000:
+    i = fibonnaci()
+    if i > 4000000:
+        break
+    elif i % 2 == 0:
+        even_list.append(i)
+        given_list.append(i)
+    else:
+        given_list.append(i)
+        
+        sumevenfibonnacinumbers = 0
+
+for element in even_list:
+    if element > 0:
+        sumevenfibonnacinumbers += element
+    
+print(sumevenfibonnacinumbers)
